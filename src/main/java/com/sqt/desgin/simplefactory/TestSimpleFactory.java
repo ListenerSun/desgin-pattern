@@ -10,6 +10,7 @@ import java.sql.Driver;
 public class TestSimpleFactory {
 
     public static void main(String[] args) {
+        //不用依赖具体的课程实现类
         Course course = CourseFactory.getInstance("chinese");
         Course course1 = CourseFactory.getInstance("math");
 //        Driver driver = Class.forName("");
