@@ -10,7 +10,7 @@ public class TestChain {
     public static void main(String[] args) {
         Account account = new Account();
         account.setIdenNo("11111");
-//        account.setUsername("ListenerSun");
+        account.setUsername("ListenerSun");
         AccountHandler userNameHandler = new UserNameAccountHandler();
         AccountHandler IdenHandler = new IdenNoAccountHandler();
         userNameHandler.setAccountHandler(IdenHandler);

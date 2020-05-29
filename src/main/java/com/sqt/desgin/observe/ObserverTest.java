@@ -10,6 +10,7 @@ public class ObserverTest {
     public static void main(String[] args) {
         Message message = new Message();
         message.addObserver(new PersonListener("孙庆天"));
+        message.addObserver(new PersonListener("小王"));
         message.produceMessage(new PersonProduce("米总"),"要放假了");
     }
 }
